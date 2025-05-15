@@ -5,11 +5,11 @@ from community import community_louvain
 from collections import Counter
 
 # Load the Excel file
-file_path = "file-name"  # Replace with your file name
+file_path = "file-name"  # Replace with file name
 df = pd.read_excel(file_path)
 
 # Standardize column names
-df.columns = ['viral', 'human']
+df.columns = ['viral', 'human']  #column names
 
 # Create graph from interactions
 G = nx.Graph()
